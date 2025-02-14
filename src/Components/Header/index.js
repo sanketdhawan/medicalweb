@@ -18,13 +18,15 @@ const Header = () => {
                         <p className="mb-0 mt-0 text-center"> 30% discount all products spatial for February</p>
                     </div>
                 </div>
-                <header className="header">
-                    <div className="container w-100">
-                        <div className="row">
-                            <div className="logoWrapper d-flex align items-center col-sm-2">
+                <header className="header shadow-sm">
+                    <div className="pl-4 pr-4 p-2">
+                        <div className="row align-items-center">
+                            <div className="col-4">
+                            <div className="logoWrapper">
                                 <Link to={'/'}><img src={Logo} alt="Logo"></img></Link>
+                                </div>
                             </div>
-                            <div className="col-sm-10 d-flex align-items-center part2">
+                            <div className="col-4 d-flex align-items-center part2">
                                 <Countrydropdown></Countrydropdown>
 
                                 {/* Header search start here */}
@@ -33,8 +35,10 @@ const Header = () => {
                                     <Button><IoSearchSharp /></Button>
                                 </div>
                                 {/* Header search start here */}
-
-                                <div className="part3 d-flex align-items-center ">
+                            </div>
+                            <div className="col-4">
+                                <div className="d-flex align-items-center justify-content-end">
+                            <div className="part3">
                                     <Button>
                                     <span className='ml-auto'><IoDocumentTextSharp /></span>
                                         <div className="prescription d-flex flex-column">
@@ -43,14 +47,15 @@ const Header = () => {
                                     </Button>
                                 </div>
 
-                                <div className="part4 d-flex align-items-center ml-auto">
+                                <div className="part4">
                                     <Button className="fav ml-3"><IoHeart/></Button>
                                 </div>
-                                <div className="part4 d-flex align-items-center ml-auto">
+                                <div className="part4">
                                     <Button className="cart ml-3"><IoCartSharp/></Button>
                                 </div>
-                                <div className="part4 d-flex align-items-center ml-auto ">
+                                <div className="part4">
                                     <Button className="circle ml-3"><FaUser/></Button>
+                                </div>
                                 </div>
                             </div>
                         </div>
